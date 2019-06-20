@@ -1,1 +1,310 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.header-flex-box {
+  display: flex;
+  justify-content: space-around;
+}
+.mobile-flex-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro-flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content-flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-border {
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Abril FatFace', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 8%;
+}
+p,
+ul {
+  font-size: 2rem;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container p,
+.container nav {
+  font-family: 'Open Sans', sans-serif;
+}
+.container header {
+  margin-top: 4%;
+  background-color: #68c9e9;
+}
+.container header h1 {
+  font-size: 4rem;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.container header nav {
+  font-size: 1.9rem;
+  margin: 20px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+.container header nav a {
+  text-decoration: none;
+  display: block;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    text-align: center;
+    margin: 10px 0;
+    padding-top: 5px;
+    border-top: 1px solid black;
+  }
+}
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+}
+.container .introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+.container .introduction .intro-content {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .introduction .intro-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.container .introduction .headshot {
+  width: 50%;
+  height: 500px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container .introduction .headshot {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: none;
+  }
+}
+.container .main-content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+  margin-top: 25px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: none;
+    padding-bottom: 20px;
+  }
+}
+.container .main-content div {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .container .main-content div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.container .main-content ul .light-gray-top {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: lightgray;
+  padding: 5px 0;
+}
+.container .main-content ul .white {
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+}
+.container .main-content ul .light-gray-mid {
+  border-bottom: 1px solid black;
+  background-color: lightgray;
+  padding: 5px 0;
+}
+.container footer {
+  text-align: center;
+  background-color: #68c9e9;
+}
+.container footer h2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.container footer p {
+  line-height: 3rem;
+}
